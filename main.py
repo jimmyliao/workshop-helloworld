@@ -4,6 +4,7 @@ import streamlit as st
 
 from components.chatbox import chatbox
 from components.header import set_page_header
+from components.footer import set_page_footer
 from components.sidebar import sidebar
 
 from components.page_config import set_page_config
@@ -22,6 +23,7 @@ set_initial_state()
 # Page Setup
 set_page_config()
 set_page_header()
+# set_page_footer()
 
 for msg in st.session_state["messages"]:
     st.chat_message(msg["role"]).write(msg["content"])
