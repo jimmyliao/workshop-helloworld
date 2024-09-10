@@ -10,8 +10,15 @@ Before you get started with Local RAG, ensure you have:
 **WARNING:** This application is `untested` on Windows Subsystem for Linux. For best results, please utilize a Linux host if possible.
 
 ### Local
-- `pip install pipenv && pipenv install`
-- `pipenv shell && streamlit run main.py`
+1. New Terminal, run Ollama
+- `ollama run gemma:7b`
+
+2. New Terminal, run Streamlit
+- `pip install pipenv && virtualenv venv`
+- `pyenv virtualenv 3.12.0 rag`
+- `pyenv activate rag`
+- `pip install -r requirements.txt`
+- `streamlit run main.py`
 
 ### Docker
 - `docker compose up -d`

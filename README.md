@@ -1,4 +1,7 @@
-# 📚 Local RAG
+# Workshop: Hello World Dev Conference 2024
+
+### 📚 Local RAG
+- Credit to [Jon Fairbanks](https://github.com/jonfairbanks/local-rag) for the original project
 
 ![local-rag-demo](demo.gif)
 
