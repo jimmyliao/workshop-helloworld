@@ -2,7 +2,7 @@ import streamlit as st
 
 import utils.helpers as func
 import utils.rag_pipeline as rag
-import utils.logs as logs
+# import utils.logs as logs
 
 
 def github_repo():

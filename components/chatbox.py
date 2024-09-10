@@ -1,6 +1,7 @@
 import streamlit as st
 
-from utils.ollama import chat, context_chat
+# from utils.ollama import chat, context_chat
+from utils.ollama import context_chat
 
 
 def chatbox():

@@ -1,6 +1,6 @@
 import streamlit as st
 
-import utils.logs as logs
+# import utils.logs as logs
 
 from utils.ollama import get_models
 

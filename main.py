@@ -16,10 +16,10 @@ def generate_welcome_message(msg):
         yield char
 
 
-### Setup Initial State
+# Setup Initial State
 set_initial_state()
 
-### Page Setup
+# Page Setup
 set_page_config()
 set_page_header()
 
@@ -27,8 +27,8 @@ for msg in st.session_state["messages"]:
     st.chat_message(msg["role"]).write(msg["content"])
     # st.chat_message(msg["role"]).write_stream(generate_welcome_message(msg['content']))
 
-### Sidebar
+# Sidebar
 sidebar()
 
-### Chat Box
+# Chat Box
 chatbox()

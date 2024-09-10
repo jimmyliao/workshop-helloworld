@@ -5,16 +5,15 @@ import streamlit as st
 import utils.logs as logs
 
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-
-# This is not used but required by llama-index and must be set FIRST
-os.environ["OPENAI_API_KEY"] = "sk-abc123"
-
 from llama_index.core import (
     VectorStoreIndex,
     SimpleDirectoryReader,
     Settings,
 )
 
+
+# This is not used but required by llama-index and must be set FIRST
+os.environ["OPENAI_API_KEY"] = "sk-abc123"
 
 
 ###################################

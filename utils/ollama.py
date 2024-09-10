@@ -1,16 +1,13 @@
 import ollama
 import os
-
 import streamlit as st
-
 import utils.logs as logs
-
-# This is not used but required by llama-index and must be imported FIRST
-os.environ["OPENAI_API_KEY"] = "sk-abc123"
-
 from llama_index.llms.ollama import Ollama
 from llama_index.core import Settings
 from llama_index.core.query_engine.retriever_query_engine import RetrieverQueryEngine
+
+# This is not used but required by llama-index and must be imported FIRST
+os.environ["OPENAI_API_KEY"] = "sk-abc123"
 
 ###################################
 #
