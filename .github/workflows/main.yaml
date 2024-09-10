@@ -16,8 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Job Context
-        run: echo "Job Context: ${{ toJson(job) }}"
-
+        run: echo "Print Job Context"
   # vuln-report:
   #   name: Vulnerability Report
   #   runs-on: ubuntu-latest
