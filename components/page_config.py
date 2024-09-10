@@ -14,13 +14,13 @@ def set_page_config():
     )
 
     # Remove the Streamlit `Deploy` button from the Header
-    st.markdown(
-        r"""
-    <style>
-    .stDeployButton {
+    hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        .stAppDeployButton {
             visibility: hidden;
         }
-    </style>
-    """,
-        unsafe_allow_html=True,
-    )
+        </style>
+        """
+
+    st.markdown(hide_menu_style, unsafe_allow_html=True)
